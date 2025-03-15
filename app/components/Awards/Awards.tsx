@@ -65,7 +65,7 @@ export const Awards = () => {
 
   if (windowSize < 991) {
     return (
-      <article className={styles.awards}>
+      <article className={styles.awards} id="Stack">
         <div className={styles.awardsContainer}>
           {card > 0 && (
             <button
@@ -132,7 +132,7 @@ export const Awards = () => {
   }
 
   return (
-    <article className={styles.awards}>
+    <article className={styles.awards} id="Stack">
       <div className={styles.awardsContainer}>
         <div className={styles.awardsControl}>
           <span>No {card === 0 ? "1" : card === 400 ? "2" : "3"}/3</span>
