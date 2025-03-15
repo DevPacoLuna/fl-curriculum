@@ -15,9 +15,10 @@ export const Header = () => {
           <p className={logoFont.className}>{`Paco L.`}</p>
         </div>
         <div className={styles.navigation}>
-          <a href="">WORKS</a>
-          <a href="">ABOUT</a>
-          <a href="">AWARDS</a>
+          <a href="#Works">WORKS</a>
+          <a href="#Events">ABOUT</a>
+          <a href="#Stack">STACK</a>
+          <a href="#Contacts">CONTACTS</a>
         </div>
         <div className={styles.social}>
           {socials.map((social, index) => (
