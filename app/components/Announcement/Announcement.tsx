@@ -18,7 +18,7 @@ const Experiences: Experiences[] = [
     company: "Romio",
     place: "remote",
     dateRange: "08/2024",
-    position: "Tech lead",
+    position: "Technical Leader",
     activities: [
       "Oversee the deployment and sale of 10+ platforms, each serving with 70+ monthly reservations.",
       "Design and implement a SaaS architecture that enables custom car rental platforms for individual clients.",
@@ -89,7 +89,7 @@ export const Announcement = () => {
   }, []);
 
   return (
-    <article className={styles.announcement}>
+    <article className={styles.announcement} id="Works">
       <hr />
       <div className={styles.announcementContainer}>
         <div className={styles.information}>

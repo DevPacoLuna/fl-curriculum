@@ -73,7 +73,7 @@ export const Events = () => {
   }, [step]);
 
   return (
-    <div className={styles.events}>
+    <div className={styles.events} id="Events">
       <div className={styles.eventsContainer}>
         <h4 className={styles.eventsTitle}>Events & Certifications</h4>
         <div className={styles.stepper}>

@@ -86,6 +86,7 @@
       width: 375px;
 
       .canva {
+        width: auto !important;
         canvas {
           object-fit: cover;
         }

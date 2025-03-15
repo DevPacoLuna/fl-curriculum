@@ -67,9 +67,9 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        gap: 20px;
-        width: calc(100% - 40px);
-        padding: 20px 0;
+        gap: 10px;
+        width: calc(100% - 10px);
+        padding: 20px 5px;
         border-top: 1px solid #f24d37;
         border-bottom: 1px solid #f24d37;
 
@@ -78,15 +78,16 @@
           justify-content: center;
           align-items: center;
           font-size: 12px;
+          text-align: center;
           font-style: normal;
           font-weight: 700;
           margin: 0;
           color: #fff;
-          width: 16%;
+          width: 8%;
         }
 
         h5 {
-          font-size: 17px;
+          font-size: 14px;
           font-style: normal;
           font-weight: 700;
           margin: 0;
@@ -131,7 +132,7 @@
         .topic {
           display: flex;
           align-items: center;
-          width: 16%;
+          width: 20%;
           gap: 5px;
 
           svg {
@@ -143,7 +144,7 @@
           }
 
           p {
-            font-size: 15px;
+            font-size: 13px;
             font-style: normal;
             font-weight: 400;
             margin: 0;
@@ -155,7 +156,7 @@
           display: flex;
           justify-content: center;
           align-items: center;
-          width: 16%;
+          width: 10%;
           color: #fff;
         }
       }
@@ -211,7 +212,6 @@
 
           .topic {
             gap: 15px;
-            width: 20%;
 
             svg {
               font-size: 40px;

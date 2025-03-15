@@ -29,7 +29,7 @@ export const socials = [
 export const Footer = () => {
   return (
     <footer className={styles.footerContainer}>
-      <div className={styles.socialsBorder}>
+      <div className={styles.socialsBorder} id="Contacts">
         <div className={styles.socials}>
           <h5>You can find me here:</h5>
           <div className={styles.socialsContainer}>
@@ -55,10 +55,10 @@ export const Footer = () => {
           <p className={logoFont.className}>{`Paco L.`}</p>
         </div>
         <div className={styles.navigation}>
-          <a href="">WORKS</a>
-          <a href="">ABOUT</a>
-          <a href="">AWARDS</a>
-          <a href="">CONTACTS</a>
+          <a href="#Works">WORKS</a>
+          <a href="#Events">ABOUT</a>
+          <a href="#Stack">STACK</a>
+          <a href="#Contacts">CONTACTS</a>
         </div>
         <span>2023 | COPYRIGHT ALL RIGHTS RESERVED</span>
       </div>
