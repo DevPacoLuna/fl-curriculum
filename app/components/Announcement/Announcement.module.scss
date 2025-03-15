@@ -1,0 +1,226 @@
+.announcement {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 800px;
+
+  hr {
+    top: 50%;
+    position: absolute;
+    width: 100%;
+    border: 1px solid #f24d37;
+    z-index: 0;
+  }
+
+  .announcementContainer {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 30px;
+    max-width: 375px;
+    height: 700px;
+    width: 90%;
+    border: 3px solid #f24d37;
+    border-radius: 8px;
+    z-index: 0;
+
+    .information {
+      background-color: #f64f3c;
+      padding: 20px;
+      height: 70%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+
+      .logo {
+        width: 200px;
+
+        p {
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 700;
+          margin: 0;
+          color: #ffd14c99;
+        }
+      }
+
+      .informationProject {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+
+        .position {
+          font-size: 30px;
+          width: 200px;
+          font-style: normal;
+          font-weight: 700;
+          margin: 0;
+          color: #fff;
+        }
+
+        .company {
+          font-size: 25px;
+          font-style: normal;
+          font-weight: 700;
+          margin: 0;
+          color: #ffd14c99;
+        }
+
+        .stepper {
+          display: flex;
+          width: 100%;
+          cursor: pointer;
+          justify-content: space-between;
+
+          .step {
+            background-color: #ffe0c9;
+            height: 5px;
+          }
+        }
+
+        ul {
+          display: flex;
+          flex-direction: column;
+          text-align: left;
+          padding-left: 0;
+          gap: 10px;
+          max-width: 375px;
+
+          li {
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 400;
+            margin: 0;
+            color: #fff;
+          }
+        }
+
+        .case {
+          display: flex;
+          align-items: center;
+          cursor: pointer;
+          justify-content: center;
+          gap: 10px;
+          height: 55px;
+          width: 180px;
+          background: #fff;
+          border-radius: 10px;
+          border: 0px;
+          color: #f54f39;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 900;
+
+          p {
+            margin: 0;
+          }
+        }
+      }
+    }
+
+    .image {
+      height: 20%;
+
+      .imageContainer {
+        position: absolute;
+        bottom: -90px;
+        width: 300px;
+        right: -12px;
+        border-radius: 8px;
+        border: 5px solid #fff;
+
+        img {
+          object-fit: cover;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 991px) {
+  .announcement {
+    height: 760px;
+    justify-content: flex-start;
+    padding-left: 20px;
+
+    .announcementContainer {
+      flex-direction: row;
+      height: 100%;
+      width: 78%;
+      max-width: 1200px;
+
+      .information {
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 60%;
+        height: calc(100% - 40px);
+        gap: 90px;
+
+        .logo {
+          margin-top: 20px;
+        }
+
+        .informationProject {
+          align-items: flex-start;
+          margin-left: 8%;
+          gap: 30px;
+          text-align: start;
+
+          .position {
+            width: 250px;
+            font-size: 50px;
+          }
+
+          span {
+            width: 280px;
+            font-size: 18px;
+          }
+        }
+      }
+
+      .image {
+        display: flex;
+        align-items: center;
+        height: 100%;
+
+        .imageContainer {
+          position: absolute;
+          width: 66%;
+          max-width: 700px;
+          height: 536px;
+          right: -197px;
+          bottom: auto;
+          border-radius: 8px;
+          border: 5px solid #fff;
+
+          img {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1350px) {
+  .announcement {
+    justify-content: center;
+    padding-left: 0;
+    height: 760px;
+
+    .announcementContainer {
+      .image {
+        .imageContainer {
+          right: -8%;
+        }
+      }
+    }
+  }
+}

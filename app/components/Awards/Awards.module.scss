@@ -1,0 +1,432 @@
+.awards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  .awardsContainer {
+    display: flex;
+    width: 375px;
+    height: 520px;
+    overflow: hidden;
+    position: relative;
+
+    .awardsActionsRight {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      z-index: 1;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 1px solid #fd5943;
+      background-color: rgb(255, 211, 66, 0.8);
+
+      svg {
+        width: 30px;
+        color: #fd5943;
+      }
+    }
+
+    .awardsActionsLeft {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      left: 10px;
+      background-color: rgb(255, 211, 66, 0.8);
+      z-index: 1;
+      top: 50%;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 1px solid #fd5943;
+
+      svg {
+        width: 30px;
+        color: #fd5943;
+      }
+    }
+
+    .awardsActions {
+      display: flex;
+      width: fit-content;
+      align-items: flex-end;
+      justify-content: space-around;
+      position: absolute;
+      height: 100%;
+      transition: transform 2s ease-in-out;
+
+      .awardBorder {
+        display: flex;
+        width: fit-content;
+        align-items: flex-end;
+        width: 330px;
+        position: relative;
+        gap: 20px;
+        border-radius: 15px;
+        margin: 0 10.5px 0 10.5px;
+        transition: transform 2s ease-in-out;
+        border: 12px solid #fff;
+        height: 496px;
+
+        .awardContainer {
+          display: flex;
+          flex-direction: column;
+          height: 100%;
+          width: 100%;
+
+          .awardHeader {
+            height: 10%;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .headerTabBorder {
+              border: 7px solid #fd5943;
+              position: absolute;
+              height: fit-content;
+              width: fit-content;
+              border-radius: 8px;
+              bottom: -28px;
+
+              .headerTab {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 70px;
+                background-color: #f64f3c;
+                padding: 8px;
+                border-radius: 8px;
+
+                p {
+                  font-size: 15px;
+                  font-style: normal;
+                  font-weight: 700;
+                  margin: 0;
+                  color: #ffd14c99;
+                }
+              }
+            }
+          }
+          .awardBody {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #f64f3c;
+            height: 80%;
+            gap: 20px;
+            text-align: center;
+
+            img {
+              height: 135px;
+            }
+
+            h5 {
+              font-size: 40px;
+              font-style: normal;
+              font-weight: 700;
+              margin: 0;
+              color: #fff;
+            }
+
+            .tagsContainer {
+              display: flex;
+              gap: 10px;
+
+              button {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 25px;
+                width: fit-content;
+                background: #ffd340;
+                border-radius: 5px;
+                border: 0px;
+                color: #f54f39;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 900;
+              }
+            }
+          }
+          .awardFooter {
+            height: 10%;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .showBorder {
+              border: 7px solid #fd5943;
+              position: absolute;
+              top: -28px;
+              height: fit-content;
+              width: fit-content;
+              border-radius: 8px;
+
+              .show {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                gap: 10px;
+                height: 55px;
+                width: 180px;
+                background: #fff;
+                border-radius: 8px;
+                border: 0px;
+                color: #f54f39;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 900;
+
+                p {
+                  margin: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 991px) {
+  .awards {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+
+    .awardsContainer {
+      display: flex;
+      align-items: center;
+      width: 95%;
+      height: 520px;
+      overflow-x: scroll;
+      position: relative;
+
+      .awardsControl {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 80%;
+        width: fit-content;
+        padding: 0 90px;
+        background-color: #f64f3c;
+        border-radius: 10px 0px 0px 10px;
+        gap: 30px;
+
+        span {
+          width: 100%;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 900;
+          color: #ffd14c99;
+        }
+
+        h5 {
+          font-size: 50px;
+          font-style: normal;
+          font-weight: 900;
+          color: #fff;
+          margin: 0;
+        }
+
+        .awardsButtons {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+          width: 100%;
+
+          .awardsControlRight {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #fd5943;
+            width: 58px;
+            height: 58px;
+            border-radius: 50%;
+            border: 1px solid #fd5943;
+
+            svg {
+              width: 30px;
+              color: #fff;
+            }
+          }
+
+          .awardsControlLeft {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #fd5943;
+            z-index: 1;
+            width: 58px;
+            height: 58px;
+            border-radius: 50%;
+            border: 1px solid #fd5943;
+
+            svg {
+              width: 30px;
+              color: #fff;
+            }
+          }
+        }
+      }
+
+      .awardsActions {
+        display: flex;
+        width: fit-content;
+        align-items: flex-end;
+        justify-content: space-around;
+        position: relative;
+        height: 100%;
+
+        .awardBorder {
+          display: flex;
+          width: fit-content;
+          align-items: flex-end;
+          width: 400px;
+          position: absolute;
+          gap: 20px;
+          border-radius: 15px;
+          margin: 0;
+          left: -11px;
+          transition: transform 0.5s ease-in-out;
+          border: 12px solid #fff;
+          height: 96%;
+        }
+
+        .awardContainer {
+          display: flex;
+          flex-direction: column;
+          height: 100%;
+          width: 400px;
+
+          .awardHeader {
+            height: 10%;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .headerTabBorder {
+              border: 7px solid #fd5943;
+              position: absolute;
+              height: fit-content;
+              width: fit-content;
+              border-radius: 8px;
+              bottom: -28px;
+
+              .headerTab {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 70px;
+                background-color: #f64f3c;
+                padding: 8px;
+                border-radius: 8px;
+
+                p {
+                  font-size: 15px;
+                  font-style: normal;
+                  font-weight: 700;
+                  margin: 0;
+                  color: #ffd14c99;
+                }
+              }
+            }
+          }
+          .awardBody {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #f64f3c;
+            height: 80%;
+            gap: 20px;
+            text-align: center;
+
+            img {
+              height: 160px;
+            }
+
+            h5 {
+              font-size: 40px;
+              font-style: normal;
+              font-weight: 700;
+              margin: 0;
+              color: #fff;
+            }
+
+            .tagsContainer {
+              display: flex;
+              gap: 10px;
+
+              button {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 25px;
+                width: fit-content;
+                background: #ffd340;
+                border-radius: 5px;
+                border: 0px;
+                color: #f54f39;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 900;
+              }
+            }
+          }
+          .awardFooter {
+            height: 10%;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+
+            .showBorder {
+              border: 7px solid #fd5943;
+              position: absolute;
+              top: -48px;
+              height: fit-content;
+              width: fit-content;
+              border-radius: 8px;
+
+              .show {
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                height: 55px;
+                width: 180px;
+                background: #fff;
+                border-radius: 8px;
+                border: 0px;
+                color: #f54f39;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 900;
+
+                p {
+                  margin: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
