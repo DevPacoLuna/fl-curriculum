@@ -1,0 +1,231 @@
+.events {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  .eventsContainer {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
+    .eventsTitle {
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 700;
+      margin: 0;
+      color: #fff;
+    }
+
+    .stepper {
+      display: flex;
+      align-items: center;
+      height: 48px;
+      background-color: #f64f3c;
+      width: 90%;
+      max-width: 540px;
+      border: 1px solid #f24d37;
+      border-radius: 8px;
+      position: relative;
+
+      .stepperActive {
+        width: 33.33%;
+        position: absolute;
+        border-radius: 8px;
+        background-color: #fff;
+        height: 100%;
+        transition: transform 0.4s ease-in-out;
+      }
+
+      p {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 15px;
+        width: 33.33%;
+        height: 100%;
+        font-style: normal;
+        cursor: pointer;
+        font-weight: 700;
+        margin: 0;
+        color: #fff;
+        z-index: 1;
+      }
+
+      .active {
+        color: #fd5943;
+      }
+    }
+
+    .eventList {
+      width: 100%;
+
+      .event {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 20px 0;
+        border-top: 1px solid #f24d37;
+        border-bottom: 1px solid #f24d37;
+
+        .year {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 700;
+          margin: 0;
+          color: #fff;
+          width: 16%;
+        }
+
+        h5 {
+          font-size: 17px;
+          font-style: normal;
+          font-weight: 700;
+          margin: 0;
+          color: #fff;
+          width: 19%;
+        }
+
+        .image {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 10%;
+
+          img {
+            height: 38px;
+          }
+        }
+
+        .location {
+          display: flex;
+          align-items: center;
+          width: 19%;
+          gap: 5px;
+
+          svg {
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            margin: 0;
+            color: #ffd340;
+          }
+
+          p {
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 400;
+            margin: 0;
+            color: #fff;
+          }
+        }
+
+        .topic {
+          display: flex;
+          align-items: center;
+          width: 16%;
+          gap: 5px;
+
+          svg {
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            margin: 0;
+            color: #ffd340;
+          }
+
+          p {
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 400;
+            margin: 0;
+            color: #fff;
+          }
+        }
+
+        .action {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 16%;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 991px) {
+  .events {
+    .eventsContainer {
+      .eventsTitle {
+        font-size: 50px;
+      }
+
+      .stepper {
+        height: 60px;
+
+        p {
+          font-size: 16px;
+        }
+      }
+
+      .eventList {
+        .event {
+          .year {
+            font-size: 20px;
+            width: 10%;
+          }
+
+          .image {
+            img {
+              height: 80px;
+            }
+          }
+
+          h5 {
+            font-size: 35px;
+            width: 20%;
+          }
+
+          .location {
+            gap: 10px;
+            width: 20%;
+
+            svg {
+              font-size: 40px;
+            }
+
+            p {
+              font-size: 30px;
+            }
+          }
+
+          .topic {
+            gap: 15px;
+            width: 20%;
+
+            svg {
+              font-size: 40px;
+            }
+
+            p {
+              font-size: 30px;
+            }
+          }
+
+          .action {
+            width: 10%;
+          }
+        }
+      }
+    }
+  }
+}

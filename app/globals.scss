@@ -1,0 +1,22 @@
+$primary-color: #000;
+$font-stack: Arial, sans-serif;
+
+body {
+  font-family: $font-stack;
+  color: $primary-color;
+  background-color: #fd5943;
+  margin: 0;
+}
+
+a {
+  color: #0070f3;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 200px;
+}
+
